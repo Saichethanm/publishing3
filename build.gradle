@@ -39,7 +39,7 @@ publishing {
 		gpr(MavenPublication) {
 			groupId = 'com.commonsdk'
 			artifactId = 'publishing3'
-			version = '0.2'
+			version = '0.3'
 
 			from(components.java)
 		}
