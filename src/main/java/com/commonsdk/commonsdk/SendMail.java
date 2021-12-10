@@ -25,6 +25,7 @@ public class SendMail {
 
     public SendMail(@Value("${app.sendgrid.apikey}") String apiKey){
         this.apiKey = apiKey;
+        System.out.println("api key => " +  this.apiKey);
     }
 
     public static void sendMail(String fromEmail, String toEmail, String subject, String content, List<File> attachmentFiles) throws IOException {
